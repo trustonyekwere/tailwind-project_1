@@ -49,7 +49,7 @@ export default function Hero() {
                             <span className="text-blue-300 text-xs sm:text-sm">Introducing SAYA AI</span>
                         </div>
 
-                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 text-white delay-100 leading-tight">
+                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 text-white delay-100">
                             <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">Code Faster</span>
                             <span className="bg-linear-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">Build Better</span>
                             <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">With SAYA AI</span>
