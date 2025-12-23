@@ -25,7 +25,7 @@ export default function Hero() {
 
     const currentFloatingCard = floatingCards[activeTab];
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 overflow-hidden">
             {/* mouse following blob */}
             <div 
                 className="absolute inset-0 opacity-30"
@@ -40,7 +40,7 @@ export default function Hero() {
             <div className="absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
-            <div className="max-w-7xl mx-auto text-center relative w-full">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 text-center relative w-full">
                 <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 text-center lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative">
 
                     <div>
@@ -49,7 +49,7 @@ export default function Hero() {
                             <span className="text-blue-300 text-xs sm:text-sm">Introducing SAYA AI</span>
                         </div>
 
-                        <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 text-white delay-100">
+                        <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 text-white delay-100">
                             <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">Code Faster</span>
                             <span className="bg-linear-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">Build Better</span>
                             <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">With SAYA AI</span>
@@ -129,7 +129,7 @@ export default function Hero() {
                             </div>
 
                             {/* Floating Cards */}
-                            <div className={`hidden md:block absolute bottom-4 right-4 transform translate-y-8 w-72 ${floatingCards[activeTab].bgColor} backdrop-blur-xl rounded-lg p-4 border border-white/20`}>
+                            <div className={`hidden lg:block absolute bottom-4 right-4 transform translate-y-8 w-72 ${floatingCards[activeTab].bgColor} backdrop-blur-xl rounded-lg p-4 border border-white/20`}>
                                 <div className="flex items-center space-x-2 mb-2">
                                     <div className={`w-6 h-6 ${currentFloatingCard.iconColor} flex items-center justify-center text-sm font-bold`}>{currentFloatingCard.icon}</div>
                                     <span className={`text-sm font-medium ${currentFloatingCard.textColor}`}>{currentFloatingCard.title}</span>

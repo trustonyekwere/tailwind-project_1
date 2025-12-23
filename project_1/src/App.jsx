@@ -14,16 +14,16 @@ function App() {
     // Simulate data fetching or content loading time with a setTimeout
     const timer = setTimeout(() => {
       setIsLoading(false); // Once content is "loaded", set isLoading to false
-    }, 3000); // Loader displays for 3 seconds
+    }, 2500); // Loader displays for 2.5 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
   return (
-      <div className="App">
+      <div>
         {isLoading ? (
           <Loader /> // Show the Loader component if isLoading is true
-        ) : (
+        ) : ( // Else, display main content
           <div className="min-h-screen bg-slate-900 overflow-hidden">
             <Navbar />
             <Hero />
