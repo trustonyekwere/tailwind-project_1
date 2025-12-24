@@ -53,7 +53,7 @@ export default function Features () {
                     {features.map((feature, key) => (
                         <div key={key} className={`flex flex-col lg:flex-row items-center gap-8 sm:gap-12 ${feature.imagePosition === "right" ? "lg:flex-row-reverse" : ""}`}>
                             {/* Code Section */}
-                            <div className="flex-1 w-full overflow-x-hidden">
+                            <div className="flex-1 w-full">
                                 <div className="relative group">
                                     <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-purple-500/20 rounded-xl sm:rounded-2xl transition-all duration-500" />
                                     <div className="relative bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 overflow-hidden group-hover:border group-hover:border-blue-600/50 transition-all duration-300">
