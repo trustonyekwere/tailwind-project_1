@@ -1,5 +1,3 @@
-
-
 export const codeExamples ={
     // "key" : "value"
     "App.jsx": `
