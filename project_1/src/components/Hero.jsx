@@ -5,7 +5,7 @@ import { Play } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { codeExamples, floatingCards } from "../data/codeExamples";
+import { codeExamples, floatingCards } from "../data/codeExamples.js";
 
 export default function Hero() {
     //   the useState and useEffect is for tracking cursor movement for background effects
