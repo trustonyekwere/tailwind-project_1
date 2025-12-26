@@ -19,13 +19,25 @@ function App() {
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 50);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [])
+
   return (
       <div>
         {isLoading ? (
           <Loader /> // Show the Loader component if isLoading is true
         ) : ( // Else, display main content
           <div className="min-h-screen bg-slate-900 overflow-hidden">
-            <Navbar />
+            <Navbar scrolled={scrolled} />
             <Hero />
             <Features />
             <Pricing />
