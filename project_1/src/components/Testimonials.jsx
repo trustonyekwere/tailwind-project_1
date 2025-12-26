@@ -2,13 +2,13 @@ const testimonials = [
     {
         name: "Sarah Divine",
         role: "Senior Developer",
-        image: "./female_profile_1.jpg",
+        image: "./sarah_divine.jpg",
         content: "This product has transformed the way our team works. The intuitive design and powerful features have boosted our productivity significantly.",
     },
     {
         name: "Michael Scott",
         role: "Project Manager",
-        image: "./female_profile_1.jpg",
+        image: "./micheal_scott.jpg",
         content: "I can't imagine going back to the old way of managing projects. This tool has streamlined our processes and improved communication across the board.",
     },
     {
@@ -47,7 +47,7 @@ export default function Testimonials () {
                                     <div className="grow">
                                         <p className="text-white text-base sm:text-lg leading-relaxed mb-3 sm:mb-4">{testimonial.content}</p>
                                         <div className="flex items-center space-x-2 sm:space-x-3">
-                                            <img src={testimonial.image} alt={testimonial.name} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover" />
+                                            <img src={testimonial.image} alt={testimonial.name} className="w-10 h-10 sm:w-15 sm:h-15 rounded-full object-cover" />
                                             <div>
                                                 <h4 className="font-semibold text-white text-sm sm:text-base">{testimonial.name}</h4>
                                                 <p className="text-xs sm:text-sm text-gray-400">{testimonial.role}</p>
